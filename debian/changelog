@@ -1,3 +1,9 @@
+fprint-openrc (0.0.2)  nitrux; urgency=medium
+
+  * Add dependency.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Wed, 23 Apr 2023 18:41:00 -0500
+
 fprint-openrc (0.0.1)  nitrux; urgency=medium
 
   * Create package.
