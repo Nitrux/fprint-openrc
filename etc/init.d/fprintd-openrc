@@ -23,3 +23,4 @@ start() {
     ebegin "Starting fprintd"
     # Start the daemon with confinement if possible
     start-stop-daemon --start --exec ${command} -- ${command_args} --pidfile ${pidfile} --make
+}
