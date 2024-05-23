@@ -2,16 +2,16 @@ fprint-openrc (0.0.3)  nitrux; urgency=medium
 
   * Fix service script.
 
- -- Uri Herrera <uri_herrera@nxos.org>  Thu, 24 Apr 2023 02:47:00 -0500
+ -- Uri Herrera <uri_herrera@nxos.org>  Thu, 24 Apr 2024 02:47:00 -0500
 
 fprint-openrc (0.0.2)  nitrux; urgency=medium
 
   * Add dependency.
 
- -- Uri Herrera <uri_herrera@nxos.org>  Wed, 23 Apr 2023 18:41:00 -0500
+ -- Uri Herrera <uri_herrera@nxos.org>  Wed, 23 Apr 2024 18:41:00 -0500
 
 fprint-openrc (0.0.1)  nitrux; urgency=medium
 
   * Create package.
 
- -- Uri Herrera <uri_herrera@nxos.org>  Wed, 23 Apr 2023 18:38:00 -0500
+ -- Uri Herrera <uri_herrera@nxos.org>  Wed, 23 Apr 2024 18:38:00 -0500
