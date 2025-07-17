@@ -9,7 +9,7 @@ Homepage: http://nxos.org
 
 Package: fprint-openrc
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, openrc, fprintd
+Depends: ${shlibs:Depends}, ${misc:Depends}, openrc, fprintd, libpam-fprintd
 Conflicts: systemd, systemd-sysv
 Description: Package to add fprint configuration for OpenRC.
  This package will add the boot scripts to use fprint

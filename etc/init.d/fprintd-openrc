@@ -1,26 +1,17 @@
 #!/sbin/openrc-run
+# Copyright (c) 2007-2021 The Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
 
 description="Fingerprint Authentication Daemon"
 command="/usr/libexec/fprintd"
-command_args=""
-command_background="yes"
 pidfile="/run/fprintd.pid"
 
 depend() {
-    need dbus
-    after dbus
+	# fprintd is a D-Bus service and requires it to be running.
+	need dbus
 }
 
 start_pre() {
-    # Ensure the state directory exists with the correct permissions
-    checkpath --directory --owner root:root --mode 0700 /var/lib/fprint
-
-    # Check and create necessary device permissions
-    # These may need to be set up manually or via udev rules depending on your system
-}
-
-start() {
-    ebegin "Starting fprintd"
-    # Start the daemon with confinement if possible
-    start-stop-daemon --start --exec ${command} -- ${command_args}
+	# Ensure the state directory exists with secure permissions.
+	checkpath --directory --owner root:root --mode 0700 /var/lib/fprint
 }
