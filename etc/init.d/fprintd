@@ -2,14 +2,12 @@
 
 description="Fingerprint Authentication Daemon"
 command="/usr/libexec/fprintd"
-pidfile="/run/fprintd.pid"
+supervisor=supervise-daemon
 
 depend() {
-	# fprintd is a D-Bus service and requires it to be running.
 	need dbus
 }
 
 start_pre() {
-	# Ensure the state directory exists with secure permissions.
 	checkpath --directory --owner root:root --mode 0700 /var/lib/fprint
 }
